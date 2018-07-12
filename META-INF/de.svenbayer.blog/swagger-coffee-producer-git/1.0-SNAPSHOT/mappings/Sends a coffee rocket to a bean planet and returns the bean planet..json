@@ -39,6 +39,7 @@
     "status" : 201,
     "body" : "{\"size\":1,\"asteroids\":[{\"shape\":\"ROUND\",\"name\":\"name\",\"speed\":1}],\"name\":\"name\"}",
     "headers" : {
+      "Content-Type" : "application/json",
       "X-RateLimit-Limit" : "1"
     },
     "transformers" : [ "response-template" ]
