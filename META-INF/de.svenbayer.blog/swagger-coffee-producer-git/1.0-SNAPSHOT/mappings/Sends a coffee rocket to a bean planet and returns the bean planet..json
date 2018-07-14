@@ -1,5 +1,5 @@
 {
-  "id" : "3a1505d9-5e53-4828-931a-2db26fd97b27",
+  "id" : "3aa2bb11-93e6-42f1-8262-3a74f6aa0e49",
   "request" : {
     "urlPath" : "/coffee-rocket-service/v1.0/takeoff",
     "method" : "POST",
@@ -13,38 +13,38 @@
     },
     "queryParameters" : {
       "withWormhole" : {
-        "equalTo" : "true"
+        "matches" : "(true|false)"
       },
       "viaHyperLoop" : {
-        "equalTo" : "true"
+        "matches" : "(true|false)"
       }
     },
     "bodyPatterns" : [ {
-      "matchesJsonPath" : "$[?(@.['rocketName'] == 'rocketName')]"
-    }, {
       "matchesJsonPath" : "$[?(@.['weight'] == 1.1)]"
+    }, {
+      "matchesJsonPath" : "$[?(@.['rocketName'] == 'rocketName')]"
     }, {
       "matchesJsonPath" : "$.['beanonauts'][*][?(@.['name'] == 'name')]"
     }, {
       "matchesJsonPath" : "$.['beanonauts'][*][?(@.['age'] == 1)]"
     }, {
-      "matchesJsonPath" : "$.['itinerary'][?(@.['departure'] == 'departure')]"
-    }, {
       "matchesJsonPath" : "$[?(@.['fuel'] == 1.1)]"
+    }, {
+      "matchesJsonPath" : "$.['itinerary'][?(@.['departure'] == 'departure')]"
     }, {
       "matchesJsonPath" : "$.['itinerary'][?(@.['destination'] == 'destination')]"
     } ]
   },
   "response" : {
     "status" : 201,
-    "body" : "{\"size\":1,\"asteroids\":[{\"shape\":\"ROUND\",\"name\":\"name\",\"speed\":1}],\"name\":\"name\"}",
+    "body" : "{\"asteroids\":[{\"shape\":\"ROUND\",\"name\":\"name\",\"speed\":1}],\"size\":1,\"name\":\"name\"}",
     "headers" : {
-      "Content-Type" : "application/json",
-      "X-RateLimit-Limit" : "1"
+      "X-RateLimit-Limit" : "1",
+      "Content-Type" : "application/json"
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "3a1505d9-5e53-4828-931a-2db26fd97b27",
+  "uuid" : "3aa2bb11-93e6-42f1-8262-3a74f6aa0e49",
   "scenarioName" : "Scenario_contracts",
   "requiredScenarioState" : "Started"
 }
