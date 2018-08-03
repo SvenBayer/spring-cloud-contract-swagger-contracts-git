@@ -1,5 +1,5 @@
 {
-  "id" : "4ee4e0f7-d16d-417b-8892-64aa6dafb057",
+  "id" : "120d0100-bd1f-4fea-a144-93669a6a8363",
   "request" : {
     "urlPath" : "/coffee-rocket-service/v1.0/takeoff",
     "method" : "POST",
@@ -44,7 +44,7 @@
     },
     "transformers" : [ "response-template" ]
   },
-  "uuid" : "4ee4e0f7-d16d-417b-8892-64aa6dafb057",
+  "uuid" : "120d0100-bd1f-4fea-a144-93669a6a8363",
   "priority" : 1,
   "scenarioName" : "Scenario_contracts",
   "requiredScenarioState" : "Started"
